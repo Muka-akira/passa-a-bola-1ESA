@@ -525,11 +525,11 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Tentar múltiplas formas de navegação
             try {
-                window.location.href = './home.html';
+                window.location.href = './index.html';
             } catch (error) {
                 console.error('Erro na navegação:', error);
                 // Fallback
-                window.location.assign('./home.html');
+                window.location.assign('./index.html');
             }
         });
     });
