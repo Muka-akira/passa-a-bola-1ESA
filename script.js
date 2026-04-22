@@ -16,7 +16,10 @@ function checkLoginStatus() {
         
         // Alterar link para perfil
         loginBtn.onclick = function() {
-            window.location.href = 'perfil.html';
+            const path = (window.location.pathname || '').replace(/\\/g, '/');
+            window.location.href = path.includes('/src/html/')
+                ? 'perfil.html'
+                : 'src/html/perfil.html';
         };
         
         // Adicionar classe para indicar que está logado
